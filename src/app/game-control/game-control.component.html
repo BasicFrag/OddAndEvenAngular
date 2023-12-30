@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="d-flex col-xs-12 text-center justify-content-center">
+      <h1 class="bg-dark text-white rounded my-3 p-2">Odd and Even Numbers</h1>
+    </div>
+    <div class="col-xs-12 d-flex justify-content-center mb-3">
+      <button class="btn btn-success p-2 mx-2" (click)="onStartGame()">
+        Start Game
+      </button>
+      <button class="btn btn-warning p-2 mx-2" (click)="onPauseGame()">
+        Pause Game
+      </button>
+      <button class="btn btn-danger p-2 mx-2" (click)="onStopGame()">
+        Stop Game
+      </button>
+    </div>
+    <hr />
+    <ng-content></ng-content>
+  </div>
+</div>

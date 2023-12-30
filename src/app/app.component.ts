@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'OddAndEven-Angular';
+  oddAndEvenNumbers: number[] = []
+  constructor() {
+
+  }
+  // Could have a more appropiate name like onIntervalFired?
+  gameCounterStarted(eventNum: number) {
+    this.oddAndEvenNumbers.push(eventNum);
+  }
 }
